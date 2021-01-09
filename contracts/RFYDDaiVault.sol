@@ -461,13 +461,13 @@ interface IVault {
     function balanceOf(address) external view returns (uint256);
 }
 
-contract RFYDVault is ERC20, ERC20Detailed, Ownable {
+contract RFYDDaiRewards is ERC20, ERC20Detailed, Ownable {
     using SafeERC20 for IERC20;
     using Address for address;
     using SafeMath for uint256;
 
     string private constant NAME = "RFYD Dai Stablecoin";
-    string private constant SYMBOL = "RFYDDai";
+    string private constant SYMBOL = "RFYD";
     uint8 private constant DECIMALS = 18;
     address
         private constant ADDRESS_TOKEN = 0x6B175474E89094C44Da98b954EedeAC495271d0F; // DAI
